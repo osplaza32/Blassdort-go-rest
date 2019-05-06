@@ -1,7 +1,6 @@
 package Tablas
-var Empresa struct{
+var Plan struct{
 	ID string `gorm:"primary_key;uuid"`
 	Nombre string
-	Plan string
 
 }
