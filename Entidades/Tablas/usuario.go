@@ -1,9 +1,7 @@
 package Tablas
 
-import "time"
-
-var Usuario struct{
-	ID string `gorm:"primary_key;uuid"`
+type Usuario struct{
+	Model
 	Tarjetaid string
 	Nombre string
 	Email string
@@ -14,8 +12,7 @@ var Usuario struct{
 	Role string
 	HashPassword string
 	Pincode string
-	CreatedAt time.Time `sql:"DEFAULT:current_timestamp"`
-	EditAt time.Time
+
 
 
 }

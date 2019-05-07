@@ -1,7 +1,10 @@
 package Tablas
-var Empresa struct{
-	ID string `gorm:"primary_key;uuid"`
+type Empresa struct{
+	Model
 	Nombre string
-	Plan string
+	CasaMatriz string
+	Logo string
+	ContactoACargo string
+
 
 }

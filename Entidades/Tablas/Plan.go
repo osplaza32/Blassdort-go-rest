@@ -1,6 +1,9 @@
 package Tablas
-var Plan struct{
-	ID string `gorm:"primary_key;uuid"`
-	Nombre string
 
+type Plan struct{
+	Model
+	Nombre string
+	LimitDoor int
+	LimitUser int
+	Precio int
 }

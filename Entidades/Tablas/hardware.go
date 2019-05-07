@@ -1,8 +1,10 @@
 package Tablas
 
-var Dia struct{
-	ID string
-	Numero string
-	Mes string
-	Anos string
+import "time"
+
+type Hardware struct{
+	Model
+	Serial string
+	FechaInstalacion time.Time
+	TheLastRevision time.Time
 }
